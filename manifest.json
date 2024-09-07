@@ -1,0 +1,19 @@
+{
+    "manifest_version": 3,
+    "name": "Autoscroller",
+    "description": "Very simple autoscroller..",
+    "version": "1.0",
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": "scrollpic.png"
+    },
+    "permissions": ["storage"],
+    "content_scripts": [
+        {
+          "js": ["./scripts/content.js"],
+            "matches": ["<all_urls>"]
+        }
+      ]
+    
+  }
+  
